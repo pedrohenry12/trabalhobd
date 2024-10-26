@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+        }
+        .card{
+            display: flex;
+            height: 80vh;
+            width: 30vw;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            flex-direction: column;
+            padding: 15px;
+
+        }
+
+        .inputs input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 240px;
+            height: 40px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+
+        }
+        .salvar{
+            height: 55px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding-top: 13px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Formulário</h1>
+            <div class="inputs">
+                <input type="text" placeholder="Digite seu nome">
+                <input type="email" placeholder="Digite seu email">
+                <input type="text" placeholder="Digite sua senha">
+            </div>
+            <div class="salvar">Salvar</div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>
