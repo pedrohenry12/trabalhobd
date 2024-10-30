@@ -30,7 +30,11 @@ const LoginSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    data: { 
+        timestamps: true,
+    },
 });
+
 
 
 const FormCollection = mongoose.model("Form", LoginSchema);
