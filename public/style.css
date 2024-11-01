@@ -14,15 +14,27 @@
 .card{
     display: flex;
     height: 60vh;
-    width: 30vw;
-    justify-content: space-between;
+    width: 35vw;
     align-items: center;
+    justify-content: center;
     background-color: white;
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 8px;
     flex-direction: column;
     padding: .9375rem;
 
+}
+
+.card h1 {
+    position: relative;
+    bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputs input{
@@ -30,7 +42,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 20vw;
+    width: 25vw;
     height: 7vh;
     padding: .625rem;
     margin: .625rem;
@@ -48,6 +60,8 @@
     text-align: center;
     border-radius: .3125rem;
     font-size: 1.25rem;
+    position: relative;
+    top: 30px;
 }
 h1{
     font-size: 40px;
@@ -56,13 +70,13 @@ h1{
 @media (max-width: 600px){
     .card{
     display: flex;
-    height: 40vh;
-    width: 40vw;
-    justify-content: space-between;
+    height: 60vh;
+    width: 60vw;
+    justify-content: center;
     align-items: center;
     background-color: white;
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 8px;
     flex-direction: column;
     padding: .9375rem;
     }
@@ -72,7 +86,7 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 7.5rem;
+    width: 50vw;
     height: 2.1875rem;
     padding: .625rem;
     margin:.75rem;
@@ -92,7 +106,6 @@ h1{
     background-color: purple;
     color: white;
     text-align: center;
-    padding-top: .625rem;
     border-radius: .3125rem;
     font-size: 20px;
     }

@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require("path");
 const bcrypt = require("bcrypt");
-const FormCollection = require("./config"); // Importa o modelo Mongoose
+const FormCollection = require("./config"); 
 const app = express();
 
 app.use(express.json());
@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 app.post("/form", async (req, res) => {
     try {
-        console.log("Dados recebidos:", req.body); // Adicionado para depuração
+        console.log("Dados recebidos:", req.body); 
         const hashedPassword = await bcrypt.hash(req.body.senha, 10);
 
         const data = {
@@ -25,8 +25,8 @@ app.post("/form", async (req, res) => {
             senha: hashedPassword
         };
 
-        const userdata = await FormCollection.create(data); // Insere o usuário na coleção
-        console.log("Dados inseridos:", userdata); // Verifique o console para o que foi inserido
+        const userdata = await FormCollection.create(data); 
+        console.log("Dados inseridos:", userdata); 
 
         res.status(201).send("Usuário cadastrado com sucesso!");
     } catch (error) {
@@ -35,7 +35,6 @@ app.post("/form", async (req, res) => {
     }
 });
 
-// Iniciar o servidor
 const port = 5000;
 app.listen(port, () => {
     console.log(`Servidor rodando na porta: ${port}`);
